@@ -1,0 +1,112 @@
+/* Font  */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@500&display=swap');
+
+/* Common style  */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.link {
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.link .arrow {
+    margin-left: 8px;
+}
+/* Player section  */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    width: 1050px;
+    padding: 30px;
+    margin-top: 19px;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    align-items: center;
+}
+.player {
+    width: 300px;
+    height: 474px;
+    padding: 15px;  
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img {
+    width: 300px;
+    height: 256px;  
+}
+.player h3 {
+    font-size: 28px;
+}
+.player p {
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+/* Highlight section  */
+.all-highlight {
+    display: flex;
+    margin-top: 165px;
+}
+.highlight-details h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0A0826;
+}
+.highlight-details p {
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-bottom: 24px;
+}
+.highlight-image {
+    margin-left: 65px;
+}
+.highlight-image img {
+    width: 567px;
+    height: 427px;
+}
+
+/* Footer Section  */
+.footer {
+    width: 100%;
+    height: 276px;
+    background-color: white;
+    margin-top: 158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo img {
+    width: 483.87px;
+    height: 110px;
+}
+.social-icon .icon {
+    width: 32px;
+    height: 32px;
+    color: #969BAB;
+    background-color: #e5e6ecee;
+    border-radius: 50%;
+    margin-right: 14px;
+    margin-top: 20px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footer h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
