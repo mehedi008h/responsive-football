@@ -107,7 +107,7 @@ main {
     grid-row-gap: 20px;
 }
 .country {
-    width: 170px;
+    width: 180px;
     height: 60px;
     background-color: #FFFFFF;
     padding: 10px;
@@ -221,6 +221,18 @@ main {
     align-items: center;
     justify-content: center;
 }
+.social-icon #instagram:hover {
+    color: #E02C6D;
+}
+.social-icon #dribbble:hover {
+    color: #ea4c89;
+}
+.social-icon #twitter:hover {
+    color:#00acee;
+}
+.social-icon #youtube:hover {
+    color: red;
+}
 .footer h3 {
     font-size: 18px;
     font-weight: 500;
@@ -229,9 +241,9 @@ main {
 /* Media Section for mobile */
 @media only screen and (max-width: 688px){
     .container, .footer {
-        width: 100%;
-       
+        width: 100%; 
     }
+    /* Header Section  */
     .header {
         width: 100%;
         height: 700px;
@@ -251,17 +263,20 @@ main {
         height: 259.17px;
         margin-top: 50px;
     }
+    /* Player Section  */
     .players {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    /* Country Section  */
     .top-country {
         height: 100%;
     }
     .countrys {
         grid-template-columns: repeat(1,1fr);
     }
+    /* Highlight Section  */
     .all-highlight {
         flex-direction: column;
         padding: 15px;
@@ -279,15 +294,101 @@ main {
         width: 328px;
         height: 248px;
     }
+    /* Recent match Section  */
     .recent-match {
         padding: 15px;
         margin-top: 20px;
     }
     .hit-match {
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 15px;
-        
+        grid-row-gap: 15px; 
     }
+    /* Footer Section  */
+    .footer {
+        margin-top: 43px;
+    }
+    .footer-logo img {
+        width: 271px;
+        height: 63px;
+    }
+    .footer h3 {
+        font-size: 18px;
+    } 
+}
+
+/* Media Section for Tablet version */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container, .footer {
+        width: 100%; 
+    }
+    /* Header Section  */
+    .header {
+        width: 100%;
+        height: 600px;
+    }
+    .banner-container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+    }
+    .banner-info h1 {
+        font-size: 36px;
+        color: white;
+    }
+    .banner-image img {
+        width: 329px;
+        height: 259.17px;
+        margin-top: 50px;
+    }
+    /* Player Section  */
+    .players {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Country Section  */
+    .top-country {
+        height: 100%;
+    }
+    .countrys {
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* Highlight Section  */
+    .all-highlight {
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .highlight-details {
+        width: 80%;
+    }
+    .highlight-details h3 {
+        font-size: 30px;
+    }
+    .highlight-image {
+        margin: 29px auto;
+    }
+    .highlight-image img {
+        width: 328px;
+        height: 248px;
+    }
+    /* Recent match Section  */
+    .recent-match {
+        padding: 15px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .hit-match {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    /* Footer Section  */
     .footer {
         margin-top: 43px;
     }
@@ -298,5 +399,4 @@ main {
     .footer h3 {
         font-size: 18px;
     }
-    
 }
