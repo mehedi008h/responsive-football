@@ -343,9 +343,9 @@ main {
     }
     /* Player Section  */
     .players {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: repeat(2,1fr);
         align-items: center;
+        padding: 15px;
     }
     /* Country Section  */
     .top-country {
@@ -382,10 +382,8 @@ main {
         text-align: center;
     }
     .hit-match {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 15px;
-        display: flex;
-        flex-direction: column;
         align-items: center; 
     }
     /* Footer Section  */
