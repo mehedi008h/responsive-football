@@ -18,6 +18,42 @@ body {
 .link .arrow {
     margin-left: 8px;
 }
+.link:hover {
+    background-color: #9410d1;
+}
+.link .arrow:hover {
+    transform: translateX(10px);
+}
+/* Header Section  */
+header {
+    width: 100%;
+    height: 677px;
+    background-color: #2D25A0;
+    display: flex;
+}
+.banner-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.banner-info, .banner-image {
+    width: 40%;
+}
+.banner-info h1 {
+    font-size: 64px;
+    color: white;
+}
+.banner-image img {
+    width: 556.01px;
+    height: 438px;
+}
+.banner-image img:hover {
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}
 /* Player section  */
 main {
     display: flex;
@@ -27,7 +63,7 @@ main {
 .container {
     width: 1050px;
     padding: 30px;
-    margin-top: 19px;
+    margin-top: 70px;
 }
 .players {
     display: grid;
@@ -55,6 +91,49 @@ main {
     color: #6C6C6C;
 }
 
+/* Country Section  */
+.top-country {
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 50px;
+}
+.section-title {
+    color: #2D25A0;
+}
+.countrys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20px;
+}
+.country {
+    width: 170px;
+    height: 60px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 0px 5px 5px 0px;
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, rgb(59, 62, 228), rgb(125, 12, 231));
+    border-image-slice: 1;
+}
+.country img {
+    width: 80px;
+    height: 60px;
+}
+.country .country-name {
+    margin-left: 16px;
+    font-size: 18px;
+}
+.country .country-name a{
+    text-decoration: none;
+    color: blue;
+}
+
 /* Highlight section  */
 .all-highlight {
     display: flex;
@@ -78,6 +157,41 @@ main {
     height: 427px;
 }
 
+/* Recent Match Section  */
+.recent-match {
+    margin-top: 70px;
+}
+.hit-match {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.match {
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+.thumbline img {
+    width: 300px;
+    height: 250px;
+}
+.match-view {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.comment {
+    margin-right: 10px;
+}
+.heart {
+    color: red;
+}
+.comments {
+    color: green;
+}
+
 /* Footer Section  */
 .footer {
     width: 100%;
@@ -92,6 +206,7 @@ main {
 .footer-logo img {
     width: 483.87px;
     height: 110px;
+    top: 0;
 }
 .social-icon .icon {
     width: 32px;
